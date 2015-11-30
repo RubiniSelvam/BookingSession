@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <EditText android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/PickupAddress"
+            android:inputType="textMultiLine"/>
+        <requestFocus />
+        <EditText android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editText1"            
+            android:hint="@string/DropAddress"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_toLeftOf="@+id/editText2"
+            android:ems="10"
+            android:hint="@string/Date"
+            android:inputType="date"/>
+            
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_below="@+id/editText2"
+                android:layout_toRightOf="@+id/editText3"
+                android:ems="10"
+                android:hint="@string/Time"
+                android:inputType="time" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText3"
+                android:layout_centerHorizontal="true"
+                android:onClick="getfare_data"
+                android:text="@string/Getfare" />
+
+         </RelativeLayout>
+            </LinearLayout>
+
+   
+
+   
