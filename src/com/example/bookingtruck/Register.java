@@ -73,7 +73,7 @@ public class Register extends Activity{
 			            long l=dbAdapter.register(phonenumber, username, password);
 			            if(l!=-1)
 			            
-			        	Toast.makeText(getApplicationContext(), "Registered successfully",Toast.LENGTH_LONG).show();
+			        	Toast.makeText(getApplicationContext(), "Account Created",Toast.LENGTH_LONG).show();
 			            Intent i=new Intent(Register.this,Booking.class);
 			            startActivity(i);
 			        }
